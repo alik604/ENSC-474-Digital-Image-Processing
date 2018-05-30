@@ -1,0 +1,25 @@
+Take your mugshot with your own camera. Now, smile or make a funny face, and take another mugshot. Read the images into MATLAB.
+
+1) Find the field of view (size in mm), resolution (mm), number of samples in x and y dimensions, number of bits used per sample, the total bits required to store the image, the actual image size on disk, the compression ratio (number of bits on disk/required total number of bits).
+
+ 
+
+2) Convert the color images to grayscale. Display the grayscale images.
+
+ 
+
+3) Subtract one grayscale image from another. Display the difference image.
+
+ 
+
+Deliverables:
+
+1) A powerpoint/pdf file with your images, and a slide detailing the salient information asked above.
+
+2) A copy of your code structured in such a way that it can be run from the command line - ie calling a function, say, assignment1, will generate all the function calls and compute the images presented in your report.
+
+3) Please do not share your code with anyone. You may explain how to do a problem but if you give off your code to your friend, then chances are that they will likely not to learn the material for this is a hands on course, and learning occurs by doing. If any two assignments are found to share the code/results, both get marked to zero with no appeal.
+
+3) Please note due date and time - assignments not submitted on canvas in the time the container is open are marked to zero regardless of reason.
+
+ 

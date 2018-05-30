@@ -1,0 +1,14 @@
+Part 1: Clean the attached noisy SaturnRings image (20 points)
+
+SaturnRings+Noise.pngView in a new window
+
+Part 2: Take your mugshot image. Now take your mugshot image with your head 
+rotated slightly and smiling/winking. Now register the rotated image with 
+the smile/wink to the original mugshot using landmarks that you have placed 
+manually on the two images, and show the difference image. Where possible, 
+use your own functions and where needed, feel free to use any MATLAB 
+functions to solve the problem. Discuss the effect of the angle of 
+rotation on the registration ie does the quality of registration depend on 
+how much the rotation is? (80 points)
+
+Deliverables: As before.

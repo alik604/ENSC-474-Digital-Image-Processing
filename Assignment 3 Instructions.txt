@@ -1,0 +1,16 @@
+1) This week, we will explore transformations of 2D grids. Here is Matlab code that shows you how to create and plot transformations that you can use to explore various transformations you can create on your own.
+ 
+ The above visualization was created with:
+   z0 = 1+2*I; %define z0 translation
+   F = (Z+z0).^(0.5);  % transform each point's x and y coordinates
+   FX = real(F); FY =imag(F); % extract x and y coordinate from the complex result
+ 
+For Part 1, create and plot ten interesting transformations of grids including a pure rotation, pure translation,  pure scaling, shear, an affine transformation, a non-linear transformation etc.. Feel free to change the code however you wish. There are a ton of resources online on mappings, and this is material you have already covered in prior courses on algebra and calculus so this is a practical test probing your understanding of this basic material.
+ 
+2) Lets say we want to apply the transformation   that rotates and translates a given image.  Display the transformation  &varphi;. Derive the formula for the inverse transformation  , compute it in Matlab and display it. Implement your own function in Matlab (ie not using inbuilt functions) to transform your mugshot grayscale image by applying the transformation to the image. To find function values at off-grid points, you will need to use your interpolation function implemented in the previous assignment. Explain whether the forward transformation  &varphi; or the inverse   will be needed to transform the image. Transform the image with 3 different choices of R and T to demonstrate the function capability.
+ 
+Deliverables:
+As before.
+Note: You have by now noticed that the assignments I am asking you to do weekly are open-ended. This is to reflect your advanced standing in the program, as well as simulate the real life tasks you will work on in your next career position. These tasks are most certainly going to be open-ended where there will be lots of choices to make, and often the problem and parameters may not be completely specified. As an engineer you are required to assess the final product that is being sought, define the problem, identify the assumptions needed to solve the task, and make good choices where needed that include an awareness of how the final result will change as a function of choices made.
+Hence, grading of these assignments will also include the comprehensiveness of your approach at considering various open variables that have not been specified. For example, in part 2, how to accommodate those function values where the function is not available will be something you will have to choose on your own. If your image is too large, feel free to downsample it, or crop it to make it manageable.
+

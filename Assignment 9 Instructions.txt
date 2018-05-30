@@ -1,0 +1,34 @@
+Non-rigid registration of images
+
+Take your mugshot (template), and take another with a HUGE smile (target)...crop these images to be the 
+same dimensions. Place corresponding landmarks on each image.
+
+ 
+
+1) Using these landmarks, generate a non-rigid transformation that will transform your smile-free image 
+towards the one with the smile, and vica versa.
+
+Note 1 Choose a reasonable standard deviation for the Gaussian smoothing. If you choose something too 
+small, it will create a very local movement of pixels. If you choose something too large, it will cause 
+lots of pixels even from far away to move with the landmark. The proper sigma is dependent on the size 
+of your image, and you can find one based on experimentation.
+
+ 
+ Note 2 Plot the vector field u(x), the transformation varphileft(xright)=x+uleft(xright), and the inverse 
+varphi^{^{-1}}left(xright)approx x-uleft(xright).
+ 
+
+2) Place landmarks in the template so that the non-rigid transformation created from these will generate 
+a motion that is physically not possible - ie say moving your eyes or nose in ways that humans can't do. 
+ Assign the destination of each landmark in a way that you will anticipate will generate this motion. 
+Transform your image in this way and show before and after transformation.
+ 
+
+3) Create an 'animation' of the overall motion by taking small steps along the displacement and creating 
+a transformation at each of these steps, apply to the image and save as an animated gif. Add some fun 
+experiments that try different transformations of your mugshot image...maybe take a group photo and morph 
+the faces in fun ways....Display an animated gif of this work.
+
+
+Notes as before. Please do not share your codes with others though you are welcome to 'discuss' how the 
+assignment is being done. You can use anyor all Matlab functions - however you must write your own codes.

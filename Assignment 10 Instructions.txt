@@ -1,0 +1,20 @@
+For the final assignment of this course, implement a K-means based segmentation algorithm to 
+work on grayscale images.
+
+1) Show the results on the image of crop circles (convert to grayscale first) for K = 2,3,4 clusters.
+
+Crop Circles.jpg
+
+2) Next Show the results on your mugshot for K = 2,3,4 clusters.
+
+ 
+
+3) And finally, show the result one or two brain images from this file: BrainImagesGrayscale.rar
+View in a new window
+
+ 
+
+A nice illustration of k-means clustering is at: http://www.thefactmachine.com/k-means-clustering/ 
+(Links to an external site.)
+
+Deliverables: As before.

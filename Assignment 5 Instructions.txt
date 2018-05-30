@@ -1,0 +1,16 @@
+Your employer is a local image-analysis company that creates products for satellite processing. 
+The team wants a simple program that can find edges in images and use these edges for enhancement.
+
+1) Implement an algorithm that uses a specified mask to find edges in your mugshot image - display the edges.
+
+2) Enhance your mugshot image with an appropriate filter based on using edges in some way. 
+Display the before and after images. Discuss the design of your filter you have chosen, and the effect of parameter choices, 
+if any, on the results.
+
+Notes:
+
+1) Pay proper attention to display of images - if the appropriate scaling methods as discussed in class 
+are not followed to display the images, the results will be incorrect. Choose appropriate boundary conditions.
+
+2) Please follow the best practices for the submission/Matlab that have been identified in lecture 
+and those the TA has sent via email.

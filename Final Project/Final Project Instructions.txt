@@ -1,0 +1,77 @@
+For all undergrads, and also for those graduate students who have not proposed their own course project.
+
+_______________________________________________
+
+ 
+
+Imaging and calcuating density maps of rods and cones in a living human retina non-invasively
+
+ENSC Professor Sarunic designs state-of-art laser Optical Coherence Tomography (OCT) scanning systems 
+that use laser light to generate 3D images of the retina. These systems are now routinely used in the 
+eye care center by opthalmologists to image British Columbians daily. One of these systems is so high 
+resolution that it can give picture of individuals rods and cones and gives images such as  shown in 
+18_45_10-_47_PR_avgOctVol_dB.tif and 18_45_10-_47_PR_avgOctVol_dB.tif.  Each little dot of while is a 
+single photoreceptor in the retina.
+
+Professor Sarunic designs the retina imaging hardware; my students and I work on the algorithms to make 
+measurements from these images using the tools of image processing such as those covered in this course. 
+These measurements help opthalmologists quantify the state of anatomy of the retina and identify locations 
+where a disease may be causing damage so it can be treated and the effect of treatment measured over time 
+so treatment can be adjusted. Together, our two labs are a world-leading operation in the image acquisition 
+and processing of three-dimensional retina OCT images with direct clinical applications.
+
+The opthalmologists at Vancouver's Eye Care Center need a software tool that can count the number of 
+these white dots (the photoreceptors - rods and cones) from these photoreceptor images and present a 
+"quantity" map - an image that presents the number of photoreceptors in a local region (a mask whose 
+size is user input say 3x3 and 5x5 etc). In some diseases, these photoreceptors are damaged and decrease 
+in number so these "maps" can potentially show the clinician where the changes are and whether they are 
+uniformly damaged or focally and selectively damaged.
+
+Your project is design an algorithm (or algorithms) to count these photoreceptors and along with user 
+supplied mask region size (say 3x3 or 5x5 or axb), generate a quantity map (number of receptors in a 
+given roi centered at the pixel). You can start by taking a small region of the image (cropping off 
+the rest) and working on that to develop your algorithm and then applying the working version to the 
+full image. You are also asked to simulate a disease image in which some of these photoreceptors are 
+randomly selected and destroyed in a localized region, mimicking the effect of a disease. Your algorithm 
+should then show that your counting method is able to detect the changes in the quantity of these 
+photoreceptors. Create a few different validation set of images, where there is one focal damage, or 
+two locations of damage and some where there is uniform reduction in number etc and confirm whether 
+your tool can find these regions and patterns of damage.
+
+ 
+
+Note: You must not discuss your approach with your colleagues - this is truly your own final project 
+and you are supposed to do it yourself entirely. There is no single correct approach - in fact, this 
+is an open problem that has not been solved yet for the images such as this have only been available 
+for a few short months and you are the first image processing class in the history of humanity to have 
+a chance to solve an open and important problem that could make a difference in people's lives by 
+improving vision care.
+
+Your project will be graded on how creative your approach is, how accurate it is, and how much effort
+ you show in developing the approach and tuning any parameters to work well on this set of images.
+ Also, as before, your code needs to be extremely efficient, well-structured and well-documented and 
+your report should identify approaches that worked AND those that didn't work, along with detailed 
+discussion on what worked and what didn't. Only those projects that really show outstanding effort in 
+all above categories will get an A or A+.
+
+The last day of exams is April 21, 2017, so I am making your project due then. I believe the grades 
+are due April 23rd so I will have a couple of days to grade the project. Those that want an extension
+ can submit a one-page project report that states they are requesting an extension and for these 
+uploaded requests, I will submit an incomplete grade. I can change the incomplete grade within the 
+first two weeks of the next term when the project is finally submitted. As before, if there is no 
+submission within the deadline, then it will be marked zero so if you are seeking an extension, you 
+will need to submit a one-page document saying so. Those who are graduating after this term should 
+not take the extension for obvious reason; an incomplete grade will show you have not completed the 
+course which could interfere with your graduation.
+
+ 
+
+Addendum: Note for graduate students who select this project as your final course project.
+
+Not all images are perfect - there are distortions and some of these distortions are manifested as 
+vertical streaks such as shown in figures OCTA+photoreceptor_artifacts.rarView in a new window. You 
+can tell that these are distortions and not blood vessels since the blood vessels are devoid of any 
+photoreceptors but the distortions aren't. If you are a grad student, and also working on this as your
+ final project, then, in addition to above, you are tasked with developing an additional algorithmic 
+layer that can identify the "distortion" band and reject measurements in this region before presenting 
+the quantity map to the clinician.

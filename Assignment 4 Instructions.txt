@@ -1,0 +1,46 @@
+Part 1:
+
+1a) Take a bunch of mugshots (say 10), different expressions etc.. Model the image as a single column vector; 
+and compute the Euclidean distance between the images. Display these distances in an appropriate format.
+
+1b) Calculate the mean, and the standard-deviation at each pixel. Display the mean and standard deviation images.
+
+1c) Next implement a function to calculate the Penrose distance between images. Calculate the Penrose distance of 
+each mugshot image to the mean and to each other. Display these distances in an appropriate format.
+
+1d) Then, take a bunch of random non-face images (eg. chair, table, book, tree etc.) and compute the Penrose 
+distance again of each of these to the mean face image using the statistics of the set of face images and 
+present these distances....how do these distances compare to the distances between the face images? Is this 
+distance function capturing the notion of "close" and "far" in this set as expected i.e could this distance 
+function be used to classify whether an image is a face (distance to mean face is small) or a non-face 
+(distance to mean face is large)?
+
+ 
+
+Part 2: Take a simple image, for example, a rect function in the middle of a square, and compute the FFT using 
+Matlab FFT2 function and display it, before and after log transformation. Interpret the FFT - ie comment 
+on what the spectrum of a rect function should ideally look like, and whether this is observed, where the low 
+frequency components are, where the high frequency components are, what is the DC value of the image etc.. 
+Display the spectrum of one of your mugshot images, after log transformation. 
+
+ 
+
+Deliverables:
+
+ 
+
+As before.
+
+You are required to take your own pictures with your own device.
+
+Need to see well-structured codes with nice indentations and generous comments - the code should "look good" 
+in addition to working correctly. The TA should be able to run these codes easily, and generate all images 
+in the report with one function call.
+
+ 
+
+The report you generate should be comprehensive, and layout all the assumptions you have made, if any, and 
+potential impact of those assumptions on the results. Note that I am moving away from prescriptive detailed 
+instructions and increasingly leaving more and more choices for you to make. This is the real world setting 
+where you will be making these decisions on your own, and this is your chance to think of how these decisions 
+will impact the communication of the message, in addition to the message itself.

@@ -1,0 +1,25 @@
+In this assignment, we will implement Bilinear interpolation.
+
+ 
+
+1) Given a grayscale image, write a function that will return the value of the image at any arbitrary location (x,y) inside the image. That location may or may not be on the integer-grid where image values are provided.
+
+2) Given an image of size MxN, write a function to resample the image to new number of samples aM x bN that are placed on the same physical FOV, where a and b are some reasonable scalars. For example, a = 2, b = 3, ie twice the number of samples in the M direction and thrice the number of samples in the N direction. When the user specifies a and b, your function will need to calculate the new location of points where image values are needed on the same physical FOV, and then use the function above to find these values. Ideally, when we display the new sampled image, the distance between samples will change appropriately such that the size of the image won't change. However, we can also plot the new samples with the same unit spacing, so that will effectively scale the size of the image.
+
+ 
+
+Experiments
+
+ 
+
+1) Take your mugshot image, and apply various scale factors axb to resize the image. Choose some interesting scale factors that are extreme eg. a = 0.1, b = 10 (which would give a tenth of the samples in the M direction, and ten times in the N direction, effectively shrinking the image by a tenth in the M direction and enlarging by a tenth in the N direction). Show the results for atleast 5 such scale factor choices.
+
+2) Given that the samples will always be inside the physical FOV, you will for now not have to worry about new samples falling outside the domain of where the given image was sampled. However, in the future, when we will rotate or transform images, new samples may fall outside the given FOV, so those would need to be handled in some way.
+
+ 
+
+Deliverables
+
+ 
+
+As before.
